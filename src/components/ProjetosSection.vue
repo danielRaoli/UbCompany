@@ -1,21 +1,24 @@
 <script setup lang="ts">
-import { link } from 'fs';
+import contabilidadeImg from '../assets/images/contabilidade.png';
+import jazzschoolImg from '../assets/images/jazzschool.png';
+import joalheiriaImg from '../assets/images/joalheiria.png';
+import floriculturaImg from '../assets/images/floricultura.png'
 import { ref } from 'vue'
 const tab = ref(null);
 
 const landingPages = [
     {
-        image: '../assets/images/contabilidade.png',
+        image: contabilidadeImg,
         title: 'Landing page para contadores',
         link: ''
     },
     {
-        image: '../assets/images/jazzschool.png',
+        image: jazzschoolImg,
         title: 'Landing Page para escola de música',
         link: 'https://danielraoli.github.io/Jazz-School/'
     },
     {
-        image: '../assets/images/joalheiria.png',
+        image: joalheiriaImg,
         title: 'Landing page para joalheiria',
         link: 'https://joalheria-page.vercel.app/'
     },
@@ -23,7 +26,7 @@ const landingPages = [
 
 const ecomerces = [
     {
-        image: '../assets/images/floricultura.png',
+        image: floriculturaImg,
         title: 'E-commerce para floricultura',
         link: 'https://danielraoli.github.io/Flower-Delivery/'
     }
