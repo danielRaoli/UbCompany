@@ -1,7 +1,7 @@
 <template>
     <v-container class="d-flex flex-column flex-md-row-reverse align-md-center">
     
-        <img src="../../src/assets/images/Website Creator-rafiki.png" class="w-100 w-md-50" alt="imagem de duas pessoas criando site">
+        <img src="../assets/images/Website Creator-rafiki.png" class="w-100 w-md-50" alt="imagem de duas pessoas criando site">
     
         <div class="d-flex flex-column ga-10">
     

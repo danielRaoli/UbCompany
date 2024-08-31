@@ -1,20 +1,21 @@
 <script setup lang="ts">
+import { link } from 'fs';
 import { ref } from 'vue'
 const tab = ref(null);
 
 const landingPages = [
     {
-        image: '../../src/assets/images/contabilidade.png',
+        image: '../assets/images/contabilidade.png',
         title: 'Landing page para contadores',
         link: ''
     },
     {
-        image: '../../src/assets/images/jazzschool.png',
+        image: '../assets/images/jazzschool.png',
         title: 'Landing Page para escola de música',
         link: 'https://danielraoli.github.io/Jazz-School/'
     },
     {
-        image: '../../src/assets/images/joalheiria.png',
+        image: '../assets/images/joalheiria.png',
         title: 'Landing page para joalheiria',
         link: 'https://joalheria-page.vercel.app/'
     },
@@ -22,7 +23,7 @@ const landingPages = [
 
 const ecomerces = [
     {
-        image: '../../src/assets/images/floricultura.png',
+        image: '../assets/images/floricultura.png',
         title: 'E-commerce para floricultura',
         link: 'https://danielraoli.github.io/Flower-Delivery/'
     }

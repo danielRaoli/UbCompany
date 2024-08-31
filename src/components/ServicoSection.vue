@@ -2,26 +2,26 @@
 
 const services = [
     {
-        image: '../../src/assets/images/institucional-icon.jpg',
+        image: '../assets/images/institucional-icon.jpg',
         title: 'Sites Institucionais',
         description: 'Os sites institucionais são projetados para representar uma organização, empresa ou instituição na internet.  Eles geralmente incluem informações sobre a história da empresa, missão, visão, valores, serviços ou        produtos.'
     },
     {
-        image: '../../src/assets/images/landingpage-icon.jpg',
+        image: '../assets/images/landingpage-icon.jpg',
         title: 'Landing Page',
         description: 'Landing pages são páginas da web projetadas especificamente para uma única finalidade, geralmente para promover um produto, serviço ou campanha. Elas são focadas em conversões'
     },    {
-        image: '../../src/assets/images/e-commer-icon.jpg',
+        image: '../assets/images/images/e-commer-icon.jpg',
         title: 'E-commerce',
         description: 'Nossos designs únicos e modernos se adequam ao seu estilo e necessidades dando a identidade que seu negócio precisa para se destacar.'
     },
     {
-        image: '../../src/assets/images/e-commer-icon.jpg',
+        image: '../assets/images/images/e-commer-icon.jpg',
         title: 'Blogs',
         description: 'Os blogs são sites usados para compartilhar informações, artigos, opiniões ou atualizações regulares. São frequentemente usados para compartilhar conhecimento e se conectar com seu público-alvo.'
     },
     {
-    image: '../../src/assets/images/bot-icon.jpg',
+    image: '../assets/images/images/bot-icon.jpg',
     title: 'Criação de Bots para Atendimento',
     description: 'Desenvolvemos bots personalizados para atendimento ao cliente, automatizando interações e melhorando a eficiência do suporte. Ideal para empresas que buscam oferecer respostas rápidas e atendimento 24/7.'
 }
