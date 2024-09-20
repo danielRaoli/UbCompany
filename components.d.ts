@@ -9,10 +9,14 @@ declare module 'vue' {
   export interface GlobalComponents {
     Banner: typeof import('./src/components/Banner.vue')['default']
     BeneficiosSection: typeof import('./src/components/BeneficiosSection.vue')['default']
+    CardBeneficio: typeof import('./src/components/CardBeneficio.vue')['default']
+    CardProjeto: typeof import('./src/components/CardProjeto.vue')['default']
+    CardService: typeof import('./src/components/CardService.vue')['default']
     ContatoSection: typeof import('./src/components/ContatoSection.vue')['default']
     MainFooter: typeof import('./src/components/MainFooter.vue')['default']
     MainHeader: typeof import('./src/components/MainHeader.vue')['default']
     ProjetosSection: typeof import('./src/components/ProjetosSection.vue')['default']
     ServicoSection: typeof import('./src/components/ServicoSection.vue')['default']
+    TabProjetos: typeof import('./src/components/TabProjetos.vue')['default']
   }
 }

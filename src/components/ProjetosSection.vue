@@ -4,13 +4,14 @@ import jazzschoolImg from '../assets/images/jazzschool.png';
 import joalheiriaImg from '../assets/images/joalheiria.png';
 import floriculturaImg from '../assets/images/floricultura.png'
 import { ref } from 'vue'
+import CardProjeto from './CardProjeto.vue';
 const tab = ref(null);
 
 const landingPages = [
     {
         image: contabilidadeImg,
         title: 'Landing page para contadores',
-        link: ''
+        link: 'https://danielraoli.github.io/LR-Contabilidade/'
     },
     {
         image: jazzschoolImg,
@@ -48,40 +49,16 @@ const ecomerces = [
                 <v-tabs-window-item :value="1">
                     <v-container fluid>
                         <v-row>
-                            <v-col v-for="pages in landingPages" cols="12" md="4">
-                                <v-card>
-                                    <v-img :lazy-src="pages.image" :src="pages.image" height="205" cover></v-img>
-
-                                    <v-card-text>
-                                        <div>{{ pages.title }}</div>
-                                    </v-card-text>
-
-                                    <v-card-actions>
-                                        <v-btn :href="pages.link" target="_blank" color="secondary"
-                                            text="Acessar"></v-btn>
-                                    </v-card-actions>
-                                </v-card>
-                            </v-col>
+                            <CardProjeto v-for="projeto in landingPages" :image="projeto.image" :link="projeto.link"
+                                :title="projeto.title" />
                         </v-row>
                     </v-container>
                 </v-tabs-window-item>
                 <v-tabs-window-item :value="2">
                     <v-container fluid>
                         <v-row>
-                            <v-col v-for="pages in ecomerces" cols="12" md="4">
-                                <v-card>
-                                    <v-img :lazy-src="pages.image" :src="pages.image" height="205" cover></v-img>
-
-                                    <v-card-text>
-                                        <div>{{ pages.title }}</div>
-                                    </v-card-text>
-
-                                    <v-card-actions>
-                                        <v-btn :href="pages.link" target="_blank" color="secondary"
-                                            text="Acessar"></v-btn>
-                                    </v-card-actions>
-                                </v-card>
-                            </v-col>
+                            <card-projeto v-for="projeto in ecomerces" :image="projeto.image" :link="projeto.link"
+                                :title="projeto.title" />
                         </v-row>
                     </v-container>
                 </v-tabs-window-item>
