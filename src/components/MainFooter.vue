@@ -21,7 +21,7 @@ const message = ref('')
 
 <template>
     <v-footer class="d-flex flex-column w-100 pa-4 bg-indigo-darken-4">
-        <div class="d-flex pa-16 align-center justify-space-around w-100">
+        <div class="d-flex flex-column flex-md-row ga-4 pa-16 align-center justify-space-around w-100">
 
             <v-sheet class="d-flex flex-column flex-1 bg-indigo-darken-4" max-width="450px">
                 <span class="text-center font-weight-bold text-primary text-h4 mb-10">Entre em contato e coloque os
@@ -44,15 +44,19 @@ const message = ref('')
 
             </v-sheet>
 
-            <div class="d-flex flex-md-column ga-8 align-center h-100 justify-center flex-1">
+            <div class="d-flex flex-column ga-md-8 ga-2 align-center h-100 justify-center flex-1">
                 <span class="text-primary">Social</span>
+                <div class="d-flex flex-md-column w-100 ga-2 align-md-center">
+                    <a v-for="link in links" :key="icon" :icon="icon" :href="link.link" color="primary" target="_blank">
+                        <v-icon color="primary">{{ link.icon }}</v-icon>
+                    </a>
+                </div>
 
-                <a v-for="link in links" :key="icon" :icon="icon" :href="link.link" color="primary" target="_blank">
-                    <v-icon color="primary">{{ link.icon }}</v-icon>
-                </a>
+
+
 
             </div>
-            <div class="d-flex ga-8 flex-column align-center h-100 justify-center flex-1">
+            <div class="d-flex ga-md-8 ga-4 flex-column align-center h-100 justify-center flex-1">
                 <span class="text-primary">Menu</span>
 
                 <a href="#servicos" class=" text-primary text-decoration-none">Serviços</a>
