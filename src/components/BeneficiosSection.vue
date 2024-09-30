@@ -10,7 +10,7 @@ const cards = [
     },
     {
         icon: 'mdi-responsive',
-        title: 'Responsivo e Mobile-Friendly',
+        title: 'Responsivo e Amigável',
         description: 'Seu site se adaptará automaticamente a dispositivos móveis, garantindo que seus visitantes tenham a melhor experiência em qualquer lugar.'
     },
     {
@@ -25,7 +25,7 @@ const cards = [
     <div class="bg-blue-grey-lighten-4 w-100 h-auto pb-10">
         <v-container>
             <header class="w-100 d-flex flex-column text-start text-md-center mb-10">
-                <span class="text-h5 text-primary">- Benefícios</span>
+                <span class="text-h5 text-primary">Benefícios:</span>
                 <span class="text-h4 text-secondary font-weight-black">Por que nos escolher?</span>
             </header>
             <div class="d-flex  flex-column flex-md-row  ga-10">

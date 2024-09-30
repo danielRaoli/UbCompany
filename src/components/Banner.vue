@@ -5,7 +5,7 @@
     
         <div class="d-flex flex-column ga-10">
     
-            <p class="text-h3 text-md-h2 text-secondary font-weight-black  text-start">
+            <p class="text-h3 text-md-h2 text-secondary font-weight-medium  text-start">
     
                 Conquiste <span class="text-primary">Clientes</span> <span class="text-primary">Velocidade</span> e <span class="text-primary">Beleza</span> em um Site!
     
@@ -17,7 +17,7 @@
     
             </p>
     
-            <v-btn href="#contato" class="text-primary pa-3 h-auto w-33" color="secondary">
+            <v-btn href="#contato" class="text-white pa-3 h-auto w-33 bg-indigo-darken-4">
     
                 saiba mais
     

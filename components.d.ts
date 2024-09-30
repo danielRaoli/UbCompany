@@ -17,6 +17,5 @@ declare module 'vue' {
     MainHeader: typeof import('./src/components/MainHeader.vue')['default']
     ProjetosSection: typeof import('./src/components/ProjetosSection.vue')['default']
     ServicoSection: typeof import('./src/components/ServicoSection.vue')['default']
-    TabProjetos: typeof import('./src/components/TabProjetos.vue')['default']
   }
 }
