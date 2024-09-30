@@ -45,7 +45,7 @@ const services = [
 </script>
 
 <template>
-    <div class="w-100 h-auto text-center" ref="cardSection">
+    <div id="servicos" class="w-100 h-auto text-center" ref="cardSection">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#000b76" fill-opacity="1"
                 d="M0,160L80,144C160,128,320,96,480,117.3C640,139,800,213,960,208C1120,203,1280,117,1360,74.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">

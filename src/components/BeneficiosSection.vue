@@ -22,16 +22,19 @@ const cards = [
 </script>
 
 <template>
-    <div class="bg-blue-grey-lighten-4 w-100 h-auto pb-10">
-        <v-container>
-            <header class="w-100 d-flex flex-column text-start text-md-center mb-10">
-                <span class="text-h5 text-primary">Benefícios:</span>
-                <span class="text-h4 text-secondary font-weight-black">Por que nos escolher?</span>
-            </header>
-            <div class="d-flex  flex-column flex-md-row  ga-10">
-                <CardBeneficio v-for="card in cards" :key="card.icon" :title="card.title" :icon="card.icon"
-                    :description="card.description" />
-            </div>
-        </v-container>
-    </div>
+    <KeepAlive>
+        <div id="beneficios" class="bg-blue-grey-lighten-4 w-100 h-auto pb-10">
+            <v-container>
+                <header class="w-100 d-flex flex-column text-start text-md-center mb-10">
+                    <span class="text-h5 text-primary">Benefícios:</span>
+                    <span class="text-h4 text-secondary font-weight-black">Por que nos escolher?</span>
+                </header>
+                <div class="d-flex  flex-column flex-md-row  ga-10">
+                    <CardBeneficio v-for="card in cards" :key="card.icon" :title="card.title" :icon="card.icon"
+                        :description="card.description" />
+                </div>
+            </v-container>
+        </div>
+    </KeepAlive>
+
 </template>
