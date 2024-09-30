@@ -6,7 +6,7 @@ import blogImg from '../assets/images/blog-icon.jpg';
 import botImg from '../assets/images/bot-icon.jpg';
 import CardService from './CardService.vue';
 
-import { defineAsyncComponent } from 'vue'
+
 
 const services = [
     {
@@ -38,7 +38,7 @@ const services = [
 ]
 
 
-const CardComponent = defineAsyncComponent(() => import('./CardService.vue'));
+
 
 
 
@@ -56,8 +56,8 @@ const CardComponent = defineAsyncComponent(() => import('./CardService.vue'));
         <div
             class="pa-5 w-100 h-auto d-flex flex-column align-center flex-md-row ga-5 align-md-end justify-md-center flex-md-wrap ma-md-auto">
 
-            <CardComponent v-once v-for="service in services" :key="service.title" :title="service.title"
-                :image="service.image" :description="service.description" />
+            <CardService v-for="service in services" :key="service.title" :title="service.title" :image="service.image"
+                :description="service.description" />
 
 
         </div>
