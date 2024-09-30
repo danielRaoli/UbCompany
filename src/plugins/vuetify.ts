@@ -5,31 +5,24 @@
  */
 
 // Styles
-import "@mdi/font/css/materialdesignicons.css";
-import "vuetify/styles";
+import '@mdi/font/css/materialdesignicons.css'
+import 'vuetify/styles'
 
 // Composables
-import { createVuetify } from "vuetify";
+import { createVuetify } from 'vuetify'
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
   theme: {
-    defaultTheme: "themedefault",
+    defaultTheme: 'themedefault',
     themes: {
       themedefault: {
         dark: false,
         colors: {
-          primary: "#FFA500",
-          secondary: "#2E2E8A",
-        },
-      },
+          primary: '#64DD17',
+          secondary: '#2E2E8A'
+        }
+      }
     },
-  },
-  defaults: {
-    global: {
-      font: {
-        family: "Poppins, sans-serif", // Define a fonte Poppins como padrão
-      },
-    },
-  },
-});
+  }
+})
