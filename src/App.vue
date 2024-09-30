@@ -27,6 +27,10 @@ import MainFooter from './components/MainFooter.vue';
 
 
 <style>
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
 html{
   scroll-behavior: smooth;
 }
