@@ -1,17 +1,3 @@
-<template>
-  <v-app>
-    <v-main>
-    <MainHeader/>
-      <Banner/>
-      <BeneficiosSection/>
-      <ServicoSection/>
-      <ProjetosSection/>
-      <ContatoSection/>
-    </v-main>
-    <MainFooter/>
-  </v-app>
-</template>
-
 <script setup lang="ts">
 import MainHeader from './components/MainHeader.vue';
 import Banner from './components/Banner.vue';
@@ -26,14 +12,31 @@ import MainFooter from './components/MainFooter.vue';
 </script>
 
 
+<template>
+  <v-app>
+    <v-main>
+      <MainHeader />
+      <Banner />
+      <BeneficiosSection />
+      <ServicoSection />
+      <ProjetosSection />
+      <ContatoSection />
+    </v-main>
+    <MainFooter />
+  </v-app>
+</template>
+
+
+
 <style>
 * {
   font-family: 'Poppins', sans-serif !important;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 .letter-space {
   letter-spacing: 5px;
 }

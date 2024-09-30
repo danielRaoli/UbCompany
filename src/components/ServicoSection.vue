@@ -6,7 +6,7 @@ import blogImg from '../assets/images/blog-icon.jpg';
 import botImg from '../assets/images/bot-icon.jpg';
 import CardService from './CardService.vue';
 
-import { ref, onMounted, defineAsyncComponent } from 'vue'
+import { defineAsyncComponent } from 'vue'
 
 const services = [
     {
@@ -40,26 +40,7 @@ const services = [
 
 const CardComponent = defineAsyncComponent(() => import('./CardService.vue'));
 
-// Reactive state para visibilidade
-const isVisible = ref(false);
 
-// Referência para o elemento que será observado
-const cardSection = ref(null);
-
-onMounted(() => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                isVisible.value = true;  // Carrega o componente quando visível
-                observer.unobserve(entry.target); // Desativa a observação após ser carregado
-            }
-        });
-    });
-
-    if (cardSection.value) {
-        observer.observe(cardSection.value);
-    }
-})
 
 </script>
 
@@ -72,7 +53,7 @@ onMounted(() => {
         </svg>
         <span class="text-h3 text-secondary  font-weight-black mt-n12">Serviços Populares</span>
 
-        <div v-if="isVisible"
+        <div
             class="pa-5 w-100 h-auto d-flex flex-column align-center flex-md-row ga-5 align-md-end justify-md-center flex-md-wrap ma-md-auto">
 
             <CardComponent v-once v-for="service in services" :key="service.title" :title="service.title"
