@@ -18,9 +18,9 @@ import MainFooter from './components/MainFooter.vue';
       <Banner />
       <BeneficiosSection />
       <ServicoSection />
-      <ProjetosSection />
+      <MainFooter />
     </v-main>
-    <MainFooter />
+
   </v-app>
 </template>
 
